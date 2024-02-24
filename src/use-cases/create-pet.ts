@@ -9,9 +9,6 @@ export class CreatePetUseCase {
   async execute(pet: PetUseCaseRequest): Promise<PetUseCaseResponse> {
     const createPet = await this.petsRepository.create(pet)
 
-    return {
-      id: createPet.id,
-      ...createPet
-    }
+    return createPet
   }
 }
