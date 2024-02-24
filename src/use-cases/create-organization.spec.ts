@@ -17,13 +17,10 @@ describe("Create Organization Use Case", () =>   {
   it("should be able to create a organization", async () => {
     const organization = await sut.execute({
       address: {
-        latitude: -19.9027336617215, 
-        longitude: -44.005445959920394,
-        neighborhood: 'Glória',
-        number: 282,
-        street: 'Rua Coronel José Soares'
+        cep: 30830280,
+        street: 'Rua Coronel José Soares',
+        city: 'bh'
       },
-      cep: 30830280,
       email: 'diovane.dm@gmail.com',
       name: 'Diovane Maia Soares',
       password: 'diovane98',

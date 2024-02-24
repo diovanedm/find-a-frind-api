@@ -1,16 +1,13 @@
 interface Address {
+  cep: number
   street: string
-  neighborhood: string
-  number: number
-  latitude: number
-  longitude: number
+  city: string
 }
 
 export interface Organization {
   id?: string;
   name: string
   email: string
-  cep: number
   address: Address
   phone: number
   password: string
