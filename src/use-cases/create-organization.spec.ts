@@ -19,14 +19,13 @@ describe("Create Organization Use Case", () =>   {
       address: {
         cep: 30830280,
         street: 'Rua Coronel José Soares',
-        city: 'bh'
       },
       email: 'diovane.dm@gmail.com',
       name: 'Diovane Maia Soares',
       password: 'diovane98',
       phone: 31971187697
     })
-
+    
     expect(organization.id)
   })
 });

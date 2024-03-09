@@ -7,10 +7,13 @@ export interface Pet {
   enviromentSize: number
   energyLevel: number
   independenceLevel: number
+  requisites: string[]
 
-  organizationId: string
+  entityId?: string | null
 }
 
 export interface PetsRepository {
   create(data: Pet): Promise<Pet>
-}
+  findById(id: string): Promise<Pet>
+  findByEntityId(entityId: string): Promise<Pet[]>
+} 

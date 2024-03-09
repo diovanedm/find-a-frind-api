@@ -9,7 +9,10 @@
     "test": "vitest run --dir src/use-cases",
     "test:watch": "vitest --dir src/use-cases"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^2.4.3"
+  },
   "devDependencies": {
     "@types/node": "^20.11.20",
     "tsx": "^4.7.1",

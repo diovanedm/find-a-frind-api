@@ -21,7 +21,7 @@ describe("Create Pet Use Case", () =>   {
       independenceLevel: 1,
       enviromentSize: 3,
       size: 1,
-      organizationId: randomUUID()
+      requisites: ['vacina', 'castrado'],
     })
     expect(pet.id).toEqual(expect.any(String))
   })

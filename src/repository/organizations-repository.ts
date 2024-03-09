@@ -15,4 +15,7 @@ export interface Organization {
 
 export interface OrganizationsRepository {
   create(data: Organization): Promise<Organization>
+  findById(id: string): Promise<Organization>
+  findByEmail(email: string): Promise<Organization | null>
+  searchMany(query: string): Promise<Organization[]>
 }
